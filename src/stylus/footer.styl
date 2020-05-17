@@ -11,7 +11,7 @@
       display block
       text-transform: uppercase
       letter-spacing: 1px
-      padding 1em 0
+      padding 1em
       color var(--lightGRay)
   &-social
     margin-top 2em
@@ -23,3 +23,15 @@
       background: url('../images/icon-twitter.svg') no-repeat center
     .facebook
       background: url('../images/icon-facebook.svg') no-repeat center
+  @media screen and (min-width: 1024px)
+    img
+      margin-right 1em
+    &-content
+      display flex
+      justify-content: space-between
+    &-menu
+      display: flex
+      margin 0
+    &-primary
+      display flex
+      align-items: center

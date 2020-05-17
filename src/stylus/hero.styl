@@ -6,3 +6,19 @@
     max-width 100%
   &-buttons
     padding-top 1em
+  @media screen and (min-width: 1024px)
+    text-align left
+    padding 1em 0
+
+    &-grid
+      display grid
+      align-items: center
+      grid-template-columns: 450px 1fr
+      grid-template-areas: "content image"
+    &-imageContainer
+      grid-area image
+      position relative
+      top 50px
+      text-align: center
+    &-content
+      grid-area: content

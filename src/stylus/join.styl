@@ -6,7 +6,14 @@
   small
     text-transform: uppercase
     letter-spacing: 4px
+  @media screen and (min-width: 1024px)
+    .u-h4
+      font-size 1.7em
+      max-width 450px
+      margin 1em auto
 .form
+  max-width 450px
+  margin auto
   .u-button
     margin 0
   &-input
@@ -20,3 +27,10 @@
     outline 0
     &::-webkit-input-placeholder
       color var(--lightGRay)
+  @media screen and (min-width: 1024px)
+    display flex
+    &-input
+      flex-shrink: 0
+      width 70%
+      margin-right 1em
+      margin-bottom 0
