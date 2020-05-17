@@ -175,11 +175,38 @@
   margin-bottom: 0.5rem;
   margin-top: 1.5rem;
 }
+.carousel {
+  text-align: left;
+  margin: 2em 0;
+}
+.carousel-content[open] .carousel-header {
+  border: none;
+}
+.carousel-content[open] .carousel-header::-webkit-details-marker {
+  color: var(--softRed);
+}
+.carousel-header {
+  padding: 1.5em 0;
+  border-bottom: 1px solid var(--lightGRay);
+  font-size: 0.9em;
+}
+.carousel-header:focus {
+  outline: 0;
+}
+.carousel-header::-webkit-details-marker {
+  color: var(--softBlue);
+  float: right;
+}
+.questions {
+  padding: 4em 0;
+  text-align: center;
+}
 :root {
   --softBlue: #5368df;
   --softRed: #fa5757;
   --grayishBlue: #9194a1;
   --veryDarkBlue: #252b46;
+  --lightGRay: #e5e5e5;
 }
 body {
   font-family: 'Rubik', sans-serif;
