@@ -64,7 +64,7 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 1.5em 0;
+  padding: 1em 0;
   transition: 0.3s background;
 }
 .header-logo {
@@ -80,7 +80,70 @@
   align-items: center;
 }
 .hero {
-  border: 1px solid #f00;
+  text-align: center;
+  padding: 4em 0;
+}
+.hero-image {
+  max-width: 100%;
+}
+.hero-buttons {
+  padding-top: 1em;
+}
+.tabs {
+  margin-top: 2em;
+  border-top: 1px solid var(--grayishBlue);
+}
+.tabs-link {
+  border-bottom: 1px solid var(--grayishBlue);
+}
+.tabs-content {
+  display: none;
+}
+.tabs-content img {
+  max-width: 100%;
+}
+.tabs-grid {
+  margin-top: 4em;
+}
+.tabs label {
+  padding: 1em 0;
+  display: block;
+  position: relative;
+}
+.tabs label:after {
+  display: none;
+  content: "";
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  left: 0;
+  transform: translateX(50%);
+  box-shadow: inset 0 -15px 0px -10px #f00;
+}
+.tabs input {
+  display: none;
+}
+.tabs input[id="bookmarking"]:checked ~ ul [for="bookmarking"]:after {
+  display: block;
+}
+.tabs input[id="bookmarking"]:checked ~ .tabs-grid #tab-bookmarking {
+  display: block;
+}
+.tabs input[id="searching"]:checked ~ ul [for="searching"]:after {
+  display: block;
+}
+.tabs input[id="searching"]:checked ~ .tabs-grid #tab-searching {
+  display: block;
+}
+.tabs input[id="sharing"]:checked ~ ul [for="sharing"]:after {
+  display: block;
+}
+.tabs input[id="sharing"]:checked ~ .tabs-grid #tab-sharing {
+  display: block;
+}
+.features {
+  text-align: center;
 }
 :root {
   --softBlue: #5368df;
@@ -89,14 +152,50 @@
   --veryDarkBlue: #252b46;
 }
 body {
-  background: #d3d3d3;
   font-family: 'Rubik', sans-serif;
   color: var(--veryDarkBlue);
   margin: 0;
   font-size: 18px;
 }
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+.is-hidden {
+  display: none !important;
+}
 .u-wrapper {
   max-width: 1280px;
   margin: auto;
   padding: 0 1em;
+}
+.u-h1,
+.u-h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+.u-p {
+  color: var(--grayishBlue);
+  line-height: 1.8;
+  font-size: 0.9em;
+}
+.u-button {
+  background: var(--softBlue);
+  color: #fff;
+  padding: 1em 1em;
+  font-size: 0.9em;
+  font-weight: 500;
+  border-radius: 0.5em;
+  margin-left: 0.5em;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 10px -5px var(--softBlue);
+}
+.u-button:first-of-type {
+  margin: 0;
+}
+.u-button.is-gray {
+  color: var(--veryDarkBlue);
+  background: #f7f7f7;
 }

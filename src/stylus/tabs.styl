@@ -1,0 +1,44 @@
+.tabs
+  // border: 1px solid red;
+  margin-top 2em
+  border-top 1px solid var(--grayishBlue)
+  &-link
+    border-bottom 1px solid var(--grayishBlue)
+  &-content
+    display: none
+    img
+      max-width 100%
+  &-grid
+    margin-top 4em
+  label
+    // border: 1px solid red;
+    padding 1em 0
+    display block
+    position: relative
+    &:after
+      display none
+      content ""
+      height 5px
+      position: absolute
+      bottom 0
+      width 50%
+      left 0
+      transform translateX(50%)
+      box-shadow: inset 0 -15px 0px -10px red
+  input
+    display none
+  input[id="bookmarking"]:checked
+    & ~ ul [for="bookmarking"]:after
+        display: block
+    & ~ .tabs-grid #tab-bookmarking
+      display block
+  input[id="searching"]:checked
+    & ~ ul [for="searching"]:after
+      display: block
+    & ~ .tabs-grid #tab-searching
+      display block
+  input[id="sharing"]:checked
+    & ~ ul [for="sharing"]:after
+      display: block
+    & ~ .tabs-grid #tab-sharing
+      display block
