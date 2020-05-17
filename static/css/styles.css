@@ -201,6 +201,65 @@
   padding: 4em 0;
   text-align: center;
 }
+.join {
+  background: var(--softBlue);
+  color: #fff;
+  padding: 3em 0;
+  text-align: center;
+}
+.join small {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.form .u-button {
+  margin: 0;
+}
+.form-input {
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  outline: 0;
+}
+.form-input::-webkit-input-placeholder {
+  color: var(--lightGRay);
+}
+.footer {
+  background: var(--veryDarkBlue);
+  text-align: center;
+  padding: 3em 0;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-menu {
+  margin-top: 2em;
+}
+.footer-menu a {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1em 0;
+  color: var(--lightGRay);
+}
+.footer-social {
+  margin-top: 2em;
+}
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.footer-social .twitter {
+  background: url("../images/icon-twitter.svg") no-repeat center;
+}
+.footer-social .facebook {
+  background: url("../images/icon-facebook.svg") no-repeat center;
+}
 :root {
   --softBlue: #5368df;
   --softRed: #fa5757;
@@ -228,12 +287,17 @@ ul {
   padding: 0 1em;
 }
 .u-h1,
-.u-h2 {
+.u-h2,
+.u-h4 {
   font-size: 2em;
   font-weight: 500;
 }
 .u-h2 {
   font-size: 1.5em;
+}
+.u-h4 {
+  font-size: 1.3em;
+  margin-top: 0.5em;
 }
 .u-p {
   color: var(--grayishBlue);
@@ -254,6 +318,10 @@ ul {
 }
 .u-button:first-of-type {
   margin: 0;
+}
+.u-button.is-red {
+  color: #fff;
+  background: var(--softRed);
 }
 .u-button.is-gray {
   color: var(--veryDarkBlue);
