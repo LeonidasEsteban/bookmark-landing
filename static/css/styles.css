@@ -314,6 +314,7 @@ ul {
   margin-left: 0.5em;
   border: none;
   cursor: pointer;
+  -webkit-appearance: none;
   box-shadow: 0 5px 10px -5px var(--softBlue);
 }
 .u-button:first-of-type {
